@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em; /* 75% larger than base font */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .row {
+    width: 100%;
+  }
+  
+  /* Section box styling */
+  .section {
+    position: relative;
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    padding: 40px 20px 20px 20px;
+    margin: 10px;
+    float: left;
+  }
+  
+  /* Section title */
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffcc00;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25em; /* 25% larger */
+    font-weight: bold;
+  }
+  
+  /* ID-specific background colors */
+  #chicken {
+    background-color: #f8d7da;
+  }
+  
+  #beef {
+    background-color: #d4edda;
+  }
+  
+  #sushi {
+    background-color: #cce5ff;
+  }
+  
+  /* Desktop view (≥ 992px) */
+  @media (min-width: 992px) {
+    .section {
+      width: 33.33%;
+    }
+  }
+  
+  /* Tablet view (768px–991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 50%;
+    }
+  
+    .section:nth-child(3) {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile view (≤ 767px) */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }

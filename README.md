@@ -1,2 +1,3 @@
 # course2_solution
-course
+git clone https://github.com/iamheroik/module2-solution.git
+cd module2-solution
